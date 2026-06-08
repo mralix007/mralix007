@@ -87,8 +87,8 @@
 </p>
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=mralix007&show_icons=true&theme=algolia&hide_border=true&count_private=true&include_all_commits=true&cache_seconds=86400" alt="GitHub stats" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mralix007&layout=compact&theme=algolia&hide_border=true&langs_count=8&cache_seconds=86400" alt="top languages" />
+  <img height="195" src="https://github-readme-stats.vercel.app/api?username=mralix007&show_icons=true&theme=algolia&hide_border=true&count_private=true&include_all_commits=true&rank_icon=percentile&cache_seconds=86400" alt="GitHub stats" />
+  <img height="195" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mralix007&layout=compact&theme=algolia&hide_border=true&langs_count=8&cache_seconds=86400" alt="top languages" />
 </p>
 
 ---
