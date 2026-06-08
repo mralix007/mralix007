@@ -9,7 +9,7 @@
 <p align="center">
   <a href="mailto:muralidharan2445@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
   <a href="https://github.com/mralix007"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
-  <img src="https://img.shields.io/badge/Chennai,_India-2ea44f?style=for-the-badge&logo=googlemaps&logoColor=white"/>
+  <img src="https://img.shields.io/badge/India-2ea44f?style=for-the-badge&logo=googlemaps&logoColor=white"/>
 </p>
 
 ---
