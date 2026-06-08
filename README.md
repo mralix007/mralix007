@@ -91,6 +91,10 @@
   <img height="195" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mralix007&layout=compact&theme=algolia&hide_border=true&langs_count=8&cache_seconds=86400" alt="top languages" />
 </p>
 
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mralix007&theme=algolia&hide_border=true&background=050609&ring=00AEFF&fire=00AEFF&currStreakLabel=00AEFF" alt="GitHub streak" />
+</p>
+
 ---
 
 <p align="center"><i>"Always Building. Always Learning."</i></p>
