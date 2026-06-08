@@ -1,9 +1,16 @@
-<h1 align="center">Hi, I'm Muralidharan 👋</h1>
-<h3 align="center">AI / ML Engineer & Builder · Always Building. Always Learning.</h3>
+<!-- Animated Iron Man / Marvel themed banner -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:8B0000,50:B8860B,100:FFD700&height=200&section=header&text=Muralidharan%20S&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI%20%2F%20ML%20Engineer%20%C2%B7%20Always%20Building%2C%20Always%20Learning&descAlignY=58&descSize=18" alt="header banner" />
 
+<!-- Animated typing subtitle -->
 <p align="center">
-  Turning ideas into <b>intelligent systems</b> — exploring the frontiers of
-  <b>artificial intelligence</b> and <b>machine learning</b>, one model at a time.
+  <a href="https://github.com/mralix007">
+    <img src="https://readme-typing-svg.herokuapp.com/?font=Orbitron&weight=600&size=24&duration=3000&pause=800&color=FFD700&center=true&vCenter=true&width=750&lines=AI+%2F+ML+Engineer+%26+Builder;Turning+ideas+into+intelligent+systems;Deep+Learning+%7C+Generative+AI+%7C+Automation;Sometimes+I+am+Iron+Man.+%F0%9F%A6%BE" alt="typing subtitle" />
+  </a>
+</p>
+
+<!-- Iron Man animation (stored in repo so it always loads) -->
+<p align="center">
+  <img src="./assets/ironman.gif" width="360" alt="Iron Man" />
 </p>
 
 <p align="center">
@@ -12,7 +19,14 @@
   <img src="https://img.shields.io/badge/India-2ea44f?style=for-the-badge&logo=googlemaps&logoColor=white"/>
 </p>
 
----
+<!-- Clickable arc-reactor "Suit Up" call to action -->
+<p align="center">
+  <a href="https://github.com/mralix007?tab=repositories">
+    <img src="https://img.shields.io/badge/%E2%9A%9B%EF%B8%8F%20Suit%20Up%20%E2%80%94%20Explore%20My%20Projects-B8860B?style=for-the-badge&logoColor=white" alt="explore projects" />
+  </a>
+</p>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:8B0000,100:FFD700&height=3" alt="divider" />
 
 ### 🚀 About Me
 
