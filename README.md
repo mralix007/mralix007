@@ -1,16 +1,20 @@
 <!-- ===================== STAR WARS THEMED PROFILE ===================== -->
 
-<!-- Deep-space banner -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=venom&color=0:000000,40:0b1a3a,100:1f6feb&height=220&section=header&text=Muralidharan%20S&fontSize=58&fontColor=FFE81F&animation=twinkling&fontAlignY=40&desc=A%20long%20time%20ago%20in%20a%20codebase%20far%2C%20far%20away...&descAlignY=62&descSize=16&descColor=9fb3ff" alt="header banner" />
-
-<!-- Lightsaber divider -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:1f6feb,50:58a6ff,100:1f6feb&height=4" alt="lightsaber" />
+<!-- Custom starfield banner (stored in repo, bold glowing title) -->
+<p align="center">
+  <img width="100%" src="./assets/banner.svg" alt="Muralidharan S — AI/ML Engineer" />
+</p>
 
 <!-- Star Wars typing subtitle (Orbitron, gold crawl color) -->
 <p align="center">
   <a href="https://github.com/mralix007">
     <img src="https://readme-typing-svg.herokuapp.com/?font=Orbitron&weight=700&size=26&duration=3200&pause=700&color=FFE81F&center=true&vCenter=true&width=820&lines=AI+%2F+ML+Engineer+%26+Jedi+of+Code;Training+models+strong+in+the+Force;Generative+AI+%E2%80%A2+Deep+Learning+%E2%80%A2+Automation;May+the+Source+be+with+you.+%E2%9A%94%EF%B8%8F" alt="typing subtitle" />
   </a>
+</p>
+
+<!-- Auto-igniting darksaber (animated SVG, stored in repo) -->
+<p align="center">
+  <img width="70%" src="./assets/darksaber.svg" alt="Darksaber" />
 </p>
 
 <!-- Star Wars animation (stored in repo so it always loads) -->
