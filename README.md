@@ -2,7 +2,7 @@
 
 <!-- Custom starfield banner (stored in repo, bold glowing title) -->
 <p align="center">
-  <img width="100%" src="./assets/banner.svg" alt="Muralidharan S — AI/ML Engineer" />
+  <img width="100%" src="./assets/banner.gif" alt="Muralidharan S - AI/ML Engineer" />
 </p>
 
 <!-- Star Wars typing subtitle (Orbitron, gold on a dark panel for readability) -->
