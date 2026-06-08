@@ -14,12 +14,22 @@
       <stop offset="0%" stop-color="#bfe9ff" stop-opacity="0"/>
       <stop offset="100%" stop-color="#7fd1ff" stop-opacity="0.95"/>
     </linearGradient>
+    <radialGradient id="planet" cx="38%" cy="34%" r="70%">
+      <stop offset="0%" stop-color="#5a7fb5"/>
+      <stop offset="70%" stop-color="#28406a"/>
+      <stop offset="100%" stop-color="#10203a"/>
+    </radialGradient>
+    <radialGradient id="jumpFlash" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="40%" stop-color="#bfe6ff"/>
+      <stop offset="100%" stop-color="#bfe6ff" stop-opacity="0"/>
+    </radialGradient>
     <filter id="titleGlow" x="-30%" y="-60%" width="160%" height="260%">
       <feGaussianBlur stdDeviation="5" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
     <filter id="softGlow"><feGaussianBlur stdDeviation="1.6"/></filter>
-    <filter id="streak" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="0.6"/></filter>
+    <filter id="streak" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="0.5"/></filter>
     <symbol id="falcon" viewBox="0 0 64 64"><path d="m8.05 35.76a71.47 71.47 0 0 1 4.75-15.67c3.59-8.19 8.8-16.18 9.61-16.51s6.93-.32 7.06 0 .49 8.86.49 8.86a11.79 11.79 0 0 1 3.57.06s-.18-8.94.19-9.13 8.05-.35 8.56 0 6.65 13.68 6.65 13.68.92-1.2 1.54-1.28 3.68-.26 3.88.05 2.7 6.76 2.9 7.5-.17 10.2-.25 10.68-1.54 1.22-1.54 1.22a15.38 15.38 0 0 1 -.94 9.21c-2.1 4.48-4 5.89-4 5.89a12.56 12.56 0 0 1 -.07 2.44c-.18.56-7.28 8-18.84 8.07s-18.58-6.5-18.53-7.26a7.68 7.68 0 0 1 .71-2.07 12.19 12.19 0 0 1 -3.2-3.94l-1.29-2.56a1.53 1.53 0 0 1 -1.64-1.15 34.42 34.42 0 0 1 -1-7.67c.21-.28 1.08-.18 1.39-.42z" fill="#1d1d1b"/>
 
 <path d="m15.05 20.05s3.41-7.57 5.05-10.23 2.72-4.49 3.15-4.56 4.75 0 4.82.27 0 7.32 0 7.32-1.24.9-1.22 1.52v.63a65.1 65.1 0 0 0 -11.8 5.05z" fill="#e6e4da"/>
@@ -99,10 +109,27 @@
 
   <rect width="1000" height="270" fill="url(#space)"/>
 
+  <!-- distant planet (parallax element) -->
+  <g opacity="0.85">
+    <animate attributeName="opacity" values="0.85;0.85;0.1;0.85" keyTimes="0;0.52;0.62;0.82" dur="9s" repeatCount="indefinite"/>
+    <circle cx="118" cy="206" r="46" fill="url(#planet)"/>
+    <ellipse cx="118" cy="206" rx="62" ry="12" fill="none" stroke="#6f8fc0" stroke-width="2" opacity="0.5" transform="rotate(-18 118 206)"/>
+  </g>
+
+  <!-- drifting asteroid -->
+  <g opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.8;0.1;0.8" keyTimes="0;0.52;0.62;0.82" dur="9s" repeatCount="indefinite"/>
+    <polygon points="0,-7 6,-4 8,3 2,8 -6,5 -7,-3" fill="#3a3f48" stroke="#565c68" stroke-width="1">
+      <animateTransform attributeName="transform" type="translate" values="930,60; 760,72" dur="9s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" values="0;360" dur="14s" repeatCount="indefinite" additive="sum"/>
+    </polygon>
+  </g>
+
+  <!-- NORMAL STARFIELD (stretches + dims during the jump) -->
   <g fill="#ffffff" filter="url(#softGlow)">
-    <animate attributeName="opacity" values="1;1;0.12;1" keyTimes="0;0.52;0.62;0.8" dur="9s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;1;0.1;1" keyTimes="0;0.52;0.62;0.82" dur="9s" repeatCount="indefinite"/>
     <circle cx="80" cy="40" r="1.4"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.1s" repeatCount="indefinite"/></circle>
-    <circle cx="180" cy="195" r="1.1"><animate attributeName="opacity" values="1;0.3;1" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="180" cy="180" r="1.1"><animate attributeName="opacity" values="1;0.3;1" dur="2.4s" repeatCount="indefinite"/></circle>
     <circle cx="300" cy="58" r="1.6"><animate attributeName="opacity" values="0.4;1;0.4" dur="3.8s" repeatCount="indefinite"/></circle>
     <circle cx="430" cy="222" r="1"><animate attributeName="opacity" values="1;0.2;1" dur="2.1s" repeatCount="indefinite"/></circle>
     <circle cx="700" cy="46" r="1.3"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.9s" repeatCount="indefinite"/></circle>
@@ -110,41 +137,66 @@
     <circle cx="930" cy="80" r="1.1"><animate attributeName="opacity" values="0.5;1;0.5" dur="2.6s" repeatCount="indefinite"/></circle>
     <circle cx="560" cy="24" r="1"><animate attributeName="opacity" values="1;0.3;1" dur="3.3s" repeatCount="indefinite"/></circle>
     <circle cx="640" cy="232" r="1.2"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.7s" repeatCount="indefinite"/></circle>
-    <circle cx="120" cy="120" r="0.9"><animate attributeName="opacity" values="1;0.4;1" dur="3.0s" repeatCount="indefinite"/></circle>
     <circle cx="380" cy="28" r="1"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite"/></circle>
     <circle cx="880" cy="36" r="1"><animate attributeName="opacity" values="1;0.4;1" dur="3.6s" repeatCount="indefinite"/></circle>
+    <circle cx="520" cy="210" r="1"><animate attributeName="opacity" values="1;0.4;1" dur="3.0s" repeatCount="indefinite"/></circle>
   </g>
 
+  <!-- HYPERSPACE TUNNEL: radial streaks streaming out from the jump point -->
   <g stroke="#eaf6ff" stroke-linecap="round" filter="url(#streak)">
     <g opacity="0">
-      <animate attributeName="opacity" values="0;0;0;1;0" keyTimes="0;0.5;0.56;0.62;0.8" dur="9s" repeatCount="indefinite"/>
-      <line x1="470" y1="120" x2="470" y2="120" stroke-width="2"><animate attributeName="x2" values="470;80" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;35" dur="9s" repeatCount="indefinite"/></line>
-      <line x1="470" y1="120" x2="470" y2="120" stroke-width="2.4"><animate attributeName="x2" values="470;55" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;150" dur="9s" repeatCount="indefinite"/></line>
-      <line x1="470" y1="120" x2="470" y2="120" stroke-width="2"><animate attributeName="x2" values="470;170" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;250" dur="9s" repeatCount="indefinite"/></line>
-      <line x1="470" y1="120" x2="470" y2="120" stroke-width="2.8"><animate attributeName="x2" values="470;980" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;55" dur="9s" repeatCount="indefinite"/></line>
-      <line x1="470" y1="120" x2="470" y2="120" stroke-width="3.2"><animate attributeName="x2" values="470;1020" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;130" dur="9s" repeatCount="indefinite"/></line>
-      <line x1="470" y1="120" x2="470" y2="120" stroke-width="2.2"><animate attributeName="x2" values="470;910" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;245" dur="9s" repeatCount="indefinite"/></line>
-      <line x1="470" y1="120" x2="470" y2="120" stroke-width="1.8"><animate attributeName="x2" values="470;300" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;12" dur="9s" repeatCount="indefinite"/></line>
-      <line x1="470" y1="120" x2="470" y2="120" stroke-width="1.8"><animate attributeName="x2" values="470;700" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;18" dur="9s" repeatCount="indefinite"/></line>
-      <line x1="470" y1="120" x2="470" y2="120" stroke-width="2"><animate attributeName="x2" values="470;250" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;255" dur="9s" repeatCount="indefinite"/></line>
-      <line x1="470" y1="120" x2="470" y2="120" stroke-width="2.6"><animate attributeName="x2" values="470;760" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;255" dur="9s" repeatCount="indefinite"/></line>
+      <animate attributeName="opacity" values="0;0;0;1;1;0" keyTimes="0;0.48;0.55;0.6;0.74;0.84" dur="9s" repeatCount="indefinite"/>
+      <line x1="470" y1="120" x2="470" y2="120" stroke-width="2.8"><animate attributeName="x1" values="470;510.0" dur="9s" repeatCount="indefinite"/><animate attributeName="y1" values="120;119.3" dur="9s" repeatCount="indefinite"/><animate attributeName="x2" values="470;1120.1" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;108.5" dur="9s" repeatCount="indefinite"/></line>
+      <line x1="470" y1="120" x2="470" y2="120" stroke-width="2.3"><animate attributeName="x1" values="470;509.2" dur="9s" repeatCount="indefinite"/><animate attributeName="y1" values="120;127.9" dur="9s" repeatCount="indefinite"/><animate attributeName="x2" values="470;1182.8" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;263.7" dur="9s" repeatCount="indefinite"/></line>
+      <line x1="470" y1="120" x2="470" y2="120" stroke-width="1.7"><animate attributeName="x1" values="470;506.2" dur="9s" repeatCount="indefinite"/><animate attributeName="y1" values="120;137.0" dur="9s" repeatCount="indefinite"/><animate attributeName="x2" values="470;1123.0" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;426.7" dur="9s" repeatCount="indefinite"/></line>
+      <line x1="470" y1="120" x2="470" y2="120" stroke-width="1.8"><animate attributeName="x1" values="470;500.1" dur="9s" repeatCount="indefinite"/><animate attributeName="y1" values="120;146.3" dur="9s" repeatCount="indefinite"/><animate attributeName="x2" values="470;947.3" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;537.2" dur="9s" repeatCount="indefinite"/></line>
+      <line x1="470" y1="120" x2="470" y2="120" stroke-width="1.8"><animate attributeName="x1" values="470;493.0" dur="9s" repeatCount="indefinite"/><animate attributeName="y1" values="120;152.7" dur="9s" repeatCount="indefinite"/><animate attributeName="x2" values="470;921.0" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;763.0" dur="9s" repeatCount="indefinite"/></line>
+      <line x1="470" y1="120" x2="470" y2="120" stroke-width="3.3"><animate attributeName="x1" values="470;485.2" dur="9s" repeatCount="indefinite"/><animate attributeName="y1" values="120;157.0" dur="9s" repeatCount="indefinite"/><animate attributeName="x2" values="470;753.5" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;809.5" dur="9s" repeatCount="indefinite"/></line>
+      <line x1="470" y1="120" x2="470" y2="120" stroke-width="3.4"><animate attributeName="x1" values="470;474.5" dur="9s" repeatCount="indefinite"/><animate attributeName="y1" values="120;159.7" dur="9s" repeatCount="indefinite"/><animate attributeName="x2" values="470;548.9" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;814.9" dur="9s" repeatCount="indefinite"/></line>
+      <line x1="470" y1="120" x2="470" y2="120" stroke-width="2.1"><animate attributeName="x1" values="470;467.0" dur="9s" repeatCount="indefinite"/><animate attributeName="y1" values="120;159.9" dur="9s" repeatCount="indefinite"/><animate attributeName="x2" values="470;410.3" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;909.4" dur="9s" repeatCount="indefinite"/></line>
+      <line x1="470" y1="120" x2="470" y2="120" stroke-width="2.2"><animate attributeName="x1" values="470;457.2" dur="9s" repeatCount="indefinite"/><animate attributeName="y1" values="120;157.9" dur="9s" repeatCount="indefinite"/><animate attributeName="x2" values="470;263.3" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;729.5" dur="9s" repeatCount="indefinite"/></line>
+      <line x1="470" y1="120" x2="470" y2="120" stroke-width="2.6"><animate attributeName="x1" values="470;446.2" dur="9s" repeatCount="indefinite"/><animate attributeName="y1" values="120;152.2" dur="9s" repeatCount="indefinite"/><animate attributeName="x2" values="470;80.4" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;647.9" dur="9s" repeatCount="indefinite"/></line>
+      <line x1="470" y1="120" x2="470" y2="120" stroke-width="2.6"><animate attributeName="x1" values="470;439.7" dur="9s" repeatCount="indefinite"/><animate attributeName="y1" values="120;146.1" dur="9s" repeatCount="indefinite"/><animate attributeName="x2" values="470;-56.2" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;573.3" dur="9s" repeatCount="indefinite"/></line>
+      <line x1="470" y1="120" x2="470" y2="120" stroke-width="2.0"><animate attributeName="x1" values="470;435.4" dur="9s" repeatCount="indefinite"/><animate attributeName="y1" values="120;140.1" dur="9s" repeatCount="indefinite"/><animate attributeName="x2" values="470;-76.2" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;437.8" dur="9s" repeatCount="indefinite"/></line>
+      <line x1="470" y1="120" x2="470" y2="120" stroke-width="2.2"><animate attributeName="x1" values="470;431.0" dur="9s" repeatCount="indefinite"/><animate attributeName="y1" values="120;128.9" dur="9s" repeatCount="indefinite"/><animate attributeName="x2" values="470;-218.0" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;276.5" dur="9s" repeatCount="indefinite"/></line>
+      <line x1="470" y1="120" x2="470" y2="120" stroke-width="2.1"><animate attributeName="x1" values="470;430.0" dur="9s" repeatCount="indefinite"/><animate attributeName="y1" values="120;119.7" dur="9s" repeatCount="indefinite"/><animate attributeName="x2" values="470;-240.6" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;113.9" dur="9s" repeatCount="indefinite"/></line>
+      <line x1="470" y1="120" x2="470" y2="120" stroke-width="2.0"><animate attributeName="x1" values="470;431.5" dur="9s" repeatCount="indefinite"/><animate attributeName="y1" values="120;109.3" dur="9s" repeatCount="indefinite"/><animate attributeName="x2" values="470;-262.0" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;-83.5" dur="9s" repeatCount="indefinite"/></line>
+      <line x1="470" y1="120" x2="470" y2="120" stroke-width="3.2"><animate attributeName="x1" values="470;434.7" dur="9s" repeatCount="indefinite"/><animate attributeName="y1" values="120;101.1" dur="9s" repeatCount="indefinite"/><animate attributeName="x2" values="470;-169.5" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;-221.7" dur="9s" repeatCount="indefinite"/></line>
+      <line x1="470" y1="120" x2="470" y2="120" stroke-width="3.4"><animate attributeName="x1" values="470;440.7" dur="9s" repeatCount="indefinite"/><animate attributeName="y1" values="120;92.8" dur="9s" repeatCount="indefinite"/><animate attributeName="x2" values="470;-26.7" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;-340.8" dur="9s" repeatCount="indefinite"/></line>
+      <line x1="470" y1="120" x2="470" y2="120" stroke-width="3.0"><animate attributeName="x1" values="470;446.0" dur="9s" repeatCount="indefinite"/><animate attributeName="y1" values="120;88.0" dur="9s" repeatCount="indefinite"/><animate attributeName="x2" values="470;48.5" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;-443.4" dur="9s" repeatCount="indefinite"/></line>
+      <line x1="470" y1="120" x2="470" y2="120" stroke-width="1.7"><animate attributeName="x1" values="470;454.5" dur="9s" repeatCount="indefinite"/><animate attributeName="y1" values="120;83.1" dur="9s" repeatCount="indefinite"/><animate attributeName="x2" values="470;192.3" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;-541.9" dur="9s" repeatCount="indefinite"/></line>
+      <line x1="470" y1="120" x2="470" y2="120" stroke-width="2.6"><animate attributeName="x1" values="470;465.8" dur="9s" repeatCount="indefinite"/><animate attributeName="y1" values="120;80.2" dur="9s" repeatCount="indefinite"/><animate attributeName="x2" values="470;389.8" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;-648.7" dur="9s" repeatCount="indefinite"/></line>
+      <line x1="470" y1="120" x2="470" y2="120" stroke-width="2.9"><animate attributeName="x1" values="470;476.3" dur="9s" repeatCount="indefinite"/><animate attributeName="y1" values="120;80.5" dur="9s" repeatCount="indefinite"/><animate attributeName="x2" values="470;577.7" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;-554.2" dur="9s" repeatCount="indefinite"/></line>
+      <line x1="470" y1="120" x2="470" y2="120" stroke-width="2.4"><animate attributeName="x1" values="470;484.5" dur="9s" repeatCount="indefinite"/><animate attributeName="y1" values="120;82.7" dur="9s" repeatCount="indefinite"/><animate attributeName="x2" values="470;737.5" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;-565.7" dur="9s" repeatCount="indefinite"/></line>
+      <line x1="470" y1="120" x2="470" y2="120" stroke-width="2.5"><animate attributeName="x1" values="470;493.8" dur="9s" repeatCount="indefinite"/><animate attributeName="y1" values="120;87.9" dur="9s" repeatCount="indefinite"/><animate attributeName="x2" values="470;951.9" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;-529.7" dur="9s" repeatCount="indefinite"/></line>
+      <line x1="470" y1="120" x2="470" y2="120" stroke-width="2.9"><animate attributeName="x1" values="470;500.4" dur="9s" repeatCount="indefinite"/><animate attributeName="y1" values="120;94.0" dur="9s" repeatCount="indefinite"/><animate attributeName="x2" values="470;950.0" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;-291.4" dur="9s" repeatCount="indefinite"/></line>
+      <line x1="470" y1="120" x2="470" y2="120" stroke-width="3.1"><animate attributeName="x1" values="470;505.7" dur="9s" repeatCount="indefinite"/><animate attributeName="y1" values="120;101.9" dur="9s" repeatCount="indefinite"/><animate attributeName="x2" values="470;1200.4" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;-249.7" dur="9s" repeatCount="indefinite"/></line>
+      <line x1="470" y1="120" x2="470" y2="120" stroke-width="2.8"><animate attributeName="x1" values="470;508.6" dur="9s" repeatCount="indefinite"/><animate attributeName="y1" values="120;109.6" dur="9s" repeatCount="indefinite"/><animate attributeName="x2" values="470;1143.1" dur="9s" repeatCount="indefinite"/><animate attributeName="y2" values="120;-61.4" dur="9s" repeatCount="indefinite"/></line>
     </g>
   </g>
 
+  <!-- bright JUMP FLASH at the vanishing point -->
+  <circle cx="470" cy="120" r="0" fill="url(#jumpFlash)">
+    <animate attributeName="r" values="0;0;0;120;0" keyTimes="0;0.54;0.57;0.6;0.66" dur="9s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;0;1;0" keyTimes="0;0.54;0.57;0.6;0.66" dur="9s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- MILLENNIUM FALCON: fly in to the D, stretch, jump to lightspeed -->
   <g>
     <animateTransform attributeName="transform" type="translate"
-      values="-150,120; 470,120; 470,120; 1300,120; 1300,120"
-      keyTimes="0; 0.5; 0.56; 0.6; 1"
-      calcMode="spline" keySplines="0.3 0 0.7 1; 0.5 0 0.5 1; 0.85 0 1 1; 0 0 1 1"
+      values="-150,120; 470,120; 470,120; 1320,120; 1320,120"
+      keyTimes="0; 0.5; 0.57; 0.61; 1"
+      calcMode="spline" keySplines="0.3 0 0.7 1; 0.5 0 0.5 1; 0.8 0 1 1; 0 0 1 1"
       dur="9s" repeatCount="indefinite"/>
     <g>
       <animateTransform attributeName="transform" type="translate" values="0,0; 0,-6; 0,4; 0,0" dur="2.6s" repeatCount="indefinite" additive="sum"/>
       <rect x="-58" y="-5" width="40" height="10" rx="5" fill="url(#thrust)">
-        <animate attributeName="opacity" values="0.9;0.9;0.2" keyTimes="0;0.55;0.62" dur="9s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.9;0.9;0.2" keyTimes="0;0.55;0.6" dur="9s" repeatCount="indefinite"/>
+        <animate attributeName="width" values="40;40;120;40" keyTimes="0;0.5;0.57;0.6" dur="9s" repeatCount="indefinite"/>
       </rect>
       <g>
         <animateTransform attributeName="transform" type="scale"
-          values="1,1; 1,1; 3.2,0.42; 1,1" keyTimes="0; 0.55; 0.6; 0.62"
+          values="1,1; 1,1; 4.2,0.34; 1,1" keyTimes="0; 0.55; 0.6; 0.62"
           dur="9s" repeatCount="indefinite" additive="sum"/>
         <use href="#falcon" x="-26" y="-26" width="52" height="52" transform="rotate(90)"/>
       </g>
