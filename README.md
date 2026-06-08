@@ -74,15 +74,17 @@
 
 ---
 
+### 🏆 GitHub Trophies
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=mralix007&theme=algolia&no-frame=true&no-bg=true&margin-w=4&row=1&column=7" alt="trophies" />
+</p>
+
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=mralix007&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mralix007&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mralix007&theme=tokyonight&hide_border=true" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=mralix007&show_icons=true&theme=algolia&hide_border=true&count_private=true&include_all_commits=true" alt="stats" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mralix007&layout=compact&theme=algolia&hide_border=true&langs_count=8" alt="top languages" />
 </p>
 
 ---
