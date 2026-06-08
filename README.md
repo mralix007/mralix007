@@ -2,8 +2,8 @@
 <h3 align="center">AI / ML Engineer & Builder · Always Building. Always Learning.</h3>
 
 <p align="center">
-  Building at the intersection of <b>generative AI</b>, <b>autonomous agents</b>, and <b>intelligent systems</b> —
-  from privacy-preserving synthetic data to self-healing AI fabrics and IoT.
+  Turning ideas into <b>intelligent systems</b> — exploring the frontiers of
+  <b>artificial intelligence</b> and <b>machine learning</b>, one model at a time.
 </p>
 
 <p align="center">
@@ -16,11 +16,11 @@
 
 ### 🚀 About Me
 
-- 🧠 I build **AI/ML systems end to end** — generative models, autonomous agents, and the data pipelines around them.
-- 🔐 Interested in **privacy-preserving ML**, **generative modeling (GANs/CTGAN)**, and **applied computer vision**.
-- 🛠️ Comfortable across the stack: deep learning, classical ML, embedded/IoT, and systems automation.
-- 🌱 Currently exploring agentic AI and trustworthy synthetic data for healthcare.
-- 💬 Ask me about CTGAN, synthetic data privacy/utility tradeoffs, or LLM-driven agents.
+- 🧠 I build **AI/ML systems end to end** — from data and models to deployment.
+- 🤖 Passionate about **deep learning**, **generative AI**, and **intelligent automation**.
+- 🛠️ Comfortable across the stack: deep learning, classical ML, and applied research.
+- 🌱 Always exploring new ideas at the edge of AI.
+- 💬 Ask me anything about machine learning, models, and building with AI.
 
 ---
 
