@@ -5,10 +5,10 @@
   <img width="100%" src="./assets/banner.svg" alt="Muralidharan S — AI/ML Engineer" />
 </p>
 
-<!-- Star Wars typing subtitle (Orbitron, gold crawl color) -->
+<!-- Star Wars typing subtitle (Orbitron, gold on a dark panel for readability) -->
 <p align="center">
   <a href="https://github.com/mralix007">
-    <img src="https://readme-typing-svg.herokuapp.com/?font=Orbitron&weight=700&size=26&duration=3200&pause=700&color=FFE81F&center=true&vCenter=true&width=820&lines=AI+%2F+ML+Engineer+%26+Jedi+of+Code;Training+models+strong+in+the+Force;Generative+AI+%E2%80%A2+Deep+Learning+%E2%80%A2+Automation;May+the+Source+be+with+you.+%E2%9A%94%EF%B8%8F" alt="typing subtitle" />
+    <img src="https://readme-typing-svg.demolab.com/?font=Orbitron&weight=800&size=27&duration=3200&pause=700&color=FFE81F&background=00000F&center=true&vCenter=true&width=840&height=70&lines=AI+%2F+ML+Engineer+%26+Jedi+of+Code;Training+models+strong+in+the+Force;Generative+AI+%E2%80%A2+Deep+Learning+%E2%80%A2+Automation;May+the+Source+be+with+you.+%E2%9A%94%EF%B8%8F" alt="typing subtitle" />
   </a>
 </p>
 
