@@ -74,14 +74,23 @@
 
 ---
 
-### 📊 GitHub Stats
+### 📊 GitHub
 
 <p align="center">
-  <img src="./metrics.svg" alt="GitHub metrics" />
+  <img src="https://komarev.com/ghpvc/?username=mralix007&style=for-the-badge&color=blueviolet&label=Profile+Views" alt="profile views" />
+  <a href="https://github.com/mralix007?tab=followers">
+    <img src="https://img.shields.io/github/followers/mralix007?style=for-the-badge&color=blue&logo=github&label=Followers" alt="followers" />
+  </a>
+  <a href="https://github.com/mralix007?tab=repositories">
+    <img src="https://img.shields.io/badge/Public%20Repos-9-success?style=for-the-badge&logo=github" alt="repos" />
+  </a>
 </p>
 
 <p align="center">
-  <img src="./metrics.achievements.svg" alt="GitHub achievements" />
+  <a href="https://github.com/mralix007">
+    <img src="https://img.shields.io/badge/Focus-AI%20%2F%20ML%20%26%20Generative%20AI-EE4C2C?style=for-the-badge" alt="focus" />
+  </a>
+  <img src="https://img.shields.io/badge/Open%20to-Collaboration-2ea44f?style=for-the-badge" alt="open to collaboration" />
 </p>
 
 ---
