@@ -1,44 +1,50 @@
-<!-- Animated Iron Man / Marvel themed banner -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:8B0000,50:B8860B,100:FFD700&height=200&section=header&text=Muralidharan%20S&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI%20%2F%20ML%20Engineer%20%C2%B7%20Always%20Building%2C%20Always%20Learning&descAlignY=58&descSize=18" alt="header banner" />
+<!-- ===================== STAR WARS THEMED PROFILE ===================== -->
 
-<!-- Animated typing subtitle -->
+<!-- Deep-space banner -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=venom&color=0:000000,40:0b1a3a,100:1f6feb&height=220&section=header&text=Muralidharan%20S&fontSize=58&fontColor=FFE81F&animation=twinkling&fontAlignY=40&desc=A%20long%20time%20ago%20in%20a%20codebase%20far%2C%20far%20away...&descAlignY=62&descSize=16&descColor=9fb3ff" alt="header banner" />
+
+<!-- Lightsaber divider -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:1f6feb,50:58a6ff,100:1f6feb&height=4" alt="lightsaber" />
+
+<!-- Star Wars typing subtitle (Orbitron, gold crawl color) -->
 <p align="center">
   <a href="https://github.com/mralix007">
-    <img src="https://readme-typing-svg.herokuapp.com/?font=Orbitron&weight=600&size=24&duration=3000&pause=800&color=FFD700&center=true&vCenter=true&width=750&lines=AI+%2F+ML+Engineer+%26+Builder;Turning+ideas+into+intelligent+systems;Deep+Learning+%7C+Generative+AI+%7C+Automation;Sometimes+I+am+Iron+Man.+%F0%9F%A6%BE" alt="typing subtitle" />
+    <img src="https://readme-typing-svg.herokuapp.com/?font=Orbitron&weight=700&size=26&duration=3200&pause=700&color=FFE81F&center=true&vCenter=true&width=820&lines=AI+%2F+ML+Engineer+%26+Jedi+of+Code;Training+models+strong+in+the+Force;Generative+AI+%E2%80%A2+Deep+Learning+%E2%80%A2+Automation;May+the+Source+be+with+you.+%E2%9A%94%EF%B8%8F" alt="typing subtitle" />
   </a>
 </p>
 
-<!-- Iron Man animation (stored in repo so it always loads) -->
+<!-- Star Wars animation (stored in repo so it always loads) -->
 <p align="center">
-  <img src="./assets/ironman.gif" width="360" alt="Iron Man" />
+  <img src="./assets/starwars.gif" width="460" alt="Star Wars" />
 </p>
 
+<!-- Holo-blue contact badges -->
 <p align="center">
-  <a href="mailto:muralidharan2445@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-  <a href="https://github.com/mralix007"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
-  <img src="https://img.shields.io/badge/India-2ea44f?style=for-the-badge&logo=googlemaps&logoColor=white"/>
+  <a href="mailto:muralidharan2445@gmail.com"><img src="https://img.shields.io/badge/Transmit%20Message-0b1a3a?style=for-the-badge&logo=gmail&logoColor=58a6ff"/></a>
+  <a href="https://github.com/mralix007"><img src="https://img.shields.io/badge/GitHub-0b1a3a?style=for-the-badge&logo=github&logoColor=58a6ff"/></a>
+  <img src="https://img.shields.io/badge/Sector-India-0b1a3a?style=for-the-badge&logo=googlemaps&logoColor=58a6ff"/>
 </p>
 
-<!-- Clickable arc-reactor "Suit Up" call to action -->
+<!-- Clickable lightsaber call to action -->
 <p align="center">
   <a href="https://github.com/mralix007?tab=repositories">
-    <img src="https://img.shields.io/badge/%E2%9A%9B%EF%B8%8F%20Suit%20Up%20%E2%80%94%20Explore%20My%20Projects-B8860B?style=for-the-badge&logoColor=white" alt="explore projects" />
+    <img src="https://img.shields.io/badge/%E2%9A%94%EF%B8%8F%20Enter%20the%20Archives%20%E2%80%94%20Explore%20My%20Projects-FFE81F?style=for-the-badge&labelColor=000000" alt="explore projects" />
   </a>
 </p>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:8B0000,100:FFD700&height=3" alt="divider" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:FFE81F,50:ffffff,100:FFE81F&height=4" alt="lightsaber" />
 
-### 🚀 About Me
+### ⭐ The Mission
 
-- 🧠 I build **AI/ML systems end to end** — from data and models to deployment.
-- 🤖 Passionate about **deep learning**, **generative AI**, and **intelligent automation**.
-- 🛠️ Comfortable across the stack: deep learning, classical ML, and applied research.
-- 🌱 Always exploring new ideas at the edge of AI.
+- 🪐 I build **AI/ML systems end to end** — from data and models to deployment.
+- 🤖 Strong in the Force of **deep learning**, **generative AI**, and **intelligent automation**.
+- ⚙️ Comfortable across the galaxy: deep learning, classical ML, and applied research.
+- 🌌 Always exploring new frontiers at the edge of AI.
 - 💬 Ask me anything about machine learning, models, and building with AI.
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:1f6feb,50:58a6ff,100:1f6feb&height=4" alt="lightsaber" />
 
-### 🛠️ Tech Stack
+### 🛠️ Arsenal
 
 **Languages**
 
@@ -75,9 +81,9 @@
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:FFE81F,50:ffffff,100:FFE81F&height=4" alt="lightsaber" />
 
-### 🔭 Featured Projects
+### 🚀 Starfleet — Featured Projects
 
 | Project | Description |
 | :--- | :--- |
@@ -86,29 +92,27 @@
 | 📡 [**Cognitive SAR (C-SAR)**](https://github.com/mralix007/Cognitive_Synthetic_Aperture_Radar_-CSAR-) | Cognitive Synthetic Aperture Radar — intelligent SAR imaging and processing. |
 | 🚑 [**Ambulance Prioritized Traffic System**](https://github.com/mralix007/Ambulance_Prioritized_Traffic_System-APTS) | Emergency-vehicle-aware traffic signal prioritization for smart cities. |
 
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:1f6feb,50:58a6ff,100:1f6feb&height=4" alt="lightsaber" />
 
-### 📊 GitHub
+### 📊 Galactic Stats
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=mralix007&style=for-the-badge&color=blueviolet&label=Profile+Views" alt="profile views" />
+  <img src="https://komarev.com/ghpvc/?username=mralix007&style=for-the-badge&color=1f6feb&label=Holo+Views" alt="profile views" />
   <a href="https://github.com/mralix007?tab=followers">
-    <img src="https://img.shields.io/github/followers/mralix007?style=for-the-badge&color=blue&logo=github&label=Followers" alt="followers" />
+    <img src="https://img.shields.io/github/followers/mralix007?style=for-the-badge&color=1f6feb&logo=github&label=Allies" alt="followers" />
   </a>
   <a href="https://github.com/mralix007?tab=repositories">
-    <img src="https://img.shields.io/badge/Public%20Repos-9-success?style=for-the-badge&logo=github" alt="repos" />
+    <img src="https://img.shields.io/badge/Archives-9%20Repos-FFE81F?style=for-the-badge&labelColor=000000&logo=github" alt="repos" />
   </a>
 </p>
 
 <p align="center">
-  <img height="195" src="https://github-readme-stats.vercel.app/api?username=mralix007&show_icons=true&theme=algolia&hide_border=true&count_private=true&include_all_commits=true&rank_icon=percentile&cache_seconds=86400" alt="GitHub stats" />
-  <img height="195" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mralix007&layout=compact&theme=algolia&hide_border=true&langs_count=8&cache_seconds=86400" alt="top languages" />
+  <img height="195" src="https://github-readme-stats.vercel.app/api?username=mralix007&show_icons=true&theme=algolia&hide_border=true&count_private=true&include_all_commits=true&rank_icon=percentile&title_color=FFE81F&icon_color=58a6ff&cache_seconds=86400" alt="GitHub stats" />
+  <img height="195" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mralix007&layout=compact&theme=algolia&hide_border=true&langs_count=8&title_color=FFE81F&cache_seconds=86400" alt="top languages" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mralix007&theme=algolia&hide_border=true&background=050609&ring=00AEFF&fire=00AEFF&currStreakLabel=00AEFF" alt="GitHub streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mralix007&theme=algolia&hide_border=true&background=000000&ring=FFE81F&fire=FFE81F&currStreakLabel=FFE81F&sideLabels=58a6ff&dates=8b949e" alt="GitHub streak" />
 </p>
 
----
-
-<p align="center"><i>"Always Building. Always Learning."</i></p>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1f6feb,50:0b1a3a,100:000000&height=120&section=footer&text=May%20the%20Source%20be%20with%20you&fontColor=FFE81F&fontSize=22&fontAlignY=70&animation=twinkling" alt="footer" />
