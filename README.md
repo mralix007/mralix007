@@ -12,9 +12,9 @@
   </a>
 </p>
 
-<!-- Auto-igniting darksaber (animated SVG, stored in repo) -->
+<!-- Clean animated lightsaber (GIF, stored in repo — always animates) -->
 <p align="center">
-  <img width="70%" src="./assets/darksaber.svg" alt="Darksaber" />
+  <img width="80%" src="./assets/lightsaber.gif" alt="lightsaber" />
 </p>
 
 <!-- Star Wars animation (stored in repo so it always loads) -->
@@ -36,7 +36,7 @@
   </a>
 </p>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:FFE81F,50:ffffff,100:FFE81F&height=4" alt="lightsaber" />
+<img width="100%" src="./assets/lightsaber.gif" alt="lightsaber divider" />
 
 ### ⭐ The Mission
 
@@ -46,7 +46,7 @@
 - 🌌 Always exploring new frontiers at the edge of AI.
 - 💬 Ask me anything about machine learning, models, and building with AI.
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:1f6feb,50:58a6ff,100:1f6feb&height=4" alt="lightsaber" />
+<img width="100%" src="./assets/lightsaber.gif" alt="lightsaber divider" />
 
 ### 🛠️ Arsenal
 
@@ -85,7 +85,7 @@
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:FFE81F,50:ffffff,100:FFE81F&height=4" alt="lightsaber" />
+<img width="100%" src="./assets/lightsaber.gif" alt="lightsaber divider" />
 
 ### 🚀 Starfleet — Featured Projects
 
@@ -96,7 +96,7 @@
 | 📡 [**Cognitive SAR (C-SAR)**](https://github.com/mralix007/Cognitive_Synthetic_Aperture_Radar_-CSAR-) | Cognitive Synthetic Aperture Radar — intelligent SAR imaging and processing. |
 | 🚑 [**Ambulance Prioritized Traffic System**](https://github.com/mralix007/Ambulance_Prioritized_Traffic_System-APTS) | Emergency-vehicle-aware traffic signal prioritization for smart cities. |
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:1f6feb,50:58a6ff,100:1f6feb&height=4" alt="lightsaber" />
+<img width="100%" src="./assets/lightsaber.gif" alt="lightsaber divider" />
 
 ### 📊 Galactic Stats
 
