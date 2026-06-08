@@ -87,10 +87,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/mralix007">
-    <img src="https://img.shields.io/badge/Focus-AI%20%2F%20ML%20%26%20Generative%20AI-EE4C2C?style=for-the-badge" alt="focus" />
-  </a>
-  <img src="https://img.shields.io/badge/Open%20to-Collaboration-2ea44f?style=for-the-badge" alt="open to collaboration" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=mralix007&show_icons=true&theme=algolia&hide_border=true&count_private=true&include_all_commits=true&cache_seconds=86400" alt="GitHub stats" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mralix007&layout=compact&theme=algolia&hide_border=true&langs_count=8&cache_seconds=86400" alt="top languages" />
 </p>
 
 ---
