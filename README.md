@@ -1,4 +1,4 @@
-<h1 align="center">Hi, I'm Muralidharan S 👋</h1>
+<h1 align="center">Hi, I'm Muralidharan 👋</h1>
 <h3 align="center">AI / ML Engineer & Builder · Always Building. Always Learning.</h3>
 
 <p align="center">
